@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дисциплины | ПЦК Естественнонаучных дисциплин</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <h1>ПЦК ЕНД</h1>
+                        <p>Университетский колледж ОГУ</p>
+                    </div>
+                </a>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                        <li><a href="staff.html"><i class="fas fa-chalkboard-teacher"></i> Состав ПЦК</a></li>
+                        <li><a href="disciplines.html" class="active"><i class="fas fa-book"></i> Дисциплины</a></li>
+                        <li><a href="additional-edu.html"><i class="fas fa-graduation-cap"></i> Доп. образование</a></li>
+                        <li><a href="week.html"><i class="fas fa-calendar-week"></i> Неделя ПЦК</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Заголовок страницы -->
+            <div class="page-header">
+                <h1 class="page-title">Преподаваемые дисциплины</h1>
+                <p class="page-subtitle">Математические и естественнонаучные дисциплины, формирующие фундаментальные знания</p>
+            </div>
+            
+            <!-- Фильтры по направлениям -->
+            <div class="discipline-filters">
+                <button class="filter-btn active" data-filter="all">Все направления</button>
+                <button class="filter-btn" data-filter="math">Математика</button>
+                <button class="filter-btn" data-filter="physics">Физика</button>
+                <button class="filter-btn" data-filter="science">Естествознание</button>
+                <button class="filter-btn" data-filter="professional">Профессиональные</button>
+            </div>
+            
+            <!-- Карточки дисциплин -->
+            <div class="disciplines-grid">
+                <!-- Математика -->
+                <div class="discipline-card" data-category="math">
+                    <div class="discipline-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Математика</h3>
+                    <div class="discipline-description">
+                        <p>Фундаментальная дисциплина, развивающая логическое мышление, аналитические способности и математическую грамотность.</p>
+                    </div>
+                    <div class="discipline-hours">
+                        <div class="hour-item">
+                            <span>Лекции:</span>
+                            <strong>72 ч.</strong>
+                        </div>
+                        <div class="hour-item">
+                            <span>Практика:</span>
+                            <strong>108 ч.</strong>
+                        </div>
+                    </div>
+                    <div class="specialties">
+                        <span class="specialty-tag">Все специальности</span>
+                    </div>
+                </div>
+                
+                <div class="discipline-card" data-category="math">
+                    <div class="discipline-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Дискретная математика</h3>
+                    <div class="discipline-description">
+                        <p>Изучение дискретных структур, графов, комбинаторики и алгоритмов. Основа для программирования и информатики.</p>
+                    </div>
+                    <div class="discipline-hours">
+                        <div class="hour-item">
+                            <span>Всего часов:</span>
+                            <strong>54 ч.</strong>
+                        </div>
+                    </div>
+                    <div class="specialties">
+                        <span class="specialty-tag">Информационные системы</span>
+                        <span class="specialty-tag">Программирование</span>
+                    </div>
+                </div>
+                
+                <!-- Физика -->
+                <div class="discipline-card" data-category="physics">
+                    <div class="discipline-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Физика</h3>
+                    <div class="discipline-description">
+                        <p>Фундаментальная наука о природе, изучающая наиболее общие закономерности строения и развития материального мира.</p>
+                    </div>
+                    <div class="discipline-hours">
+                        <div class="hour-item">
+                            <span>Лекции:</span>
+                            <strong>54 ч.</strong>
+                        </div>
+                        <div class="hour-item">
+                            <span>Лабораторные:</span>
+                            <strong>72 ч.</strong>
+                        </div>
+                    </div>
+                    <div class="specialties">
+                        <span class="specialty-tag">Технические специальности</span>
+                        <span class="specialty-tag">Электротехника</span>
+                    </div>
+                </div>
+                
+                <div class="discipline-card" data-category="physics">
+                    <div class="discipline-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Электротехника</h3>
+                    <div class="discipline-description">
+                        <p>Прикладная дисциплина, изучающая методы использования электрической энергии в практических целях.</p>
+                    </div>
+                    <div class="discipline-hours">
+                        <div class="hour-item">
+                            <span>Всего часов:</span>
+                            <strong>90 ч.</strong>
+                        </div>
+                    </div>
+                    <div class="specialties">
+                        <span class="specialty-tag">Электромеханика</span>
+                        <span class="specialty-tag">Автоматизация</span>
+                    </div>
+                </div>
+                
+                <!-- Естествознание -->
+                <div class="discipline-card" data-category="science">
+                    <div class="discipline-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Химия</h3>
+                    <div class="discipline-description">
+                        <p>Наука о веществах, их составе, строении, свойствах и превращениях, происходящих в результате химических реакций.</p>
+                    </div>
+                    <div class="discipline-hours">
+                        <div class="hour-item">
+                            <span>Теория:</span>
+                            <strong>36 ч.</strong>
+                        </div>
+                        <div class="hour-item">
+                            <span>Практикум:</span>
+                            <strong>54 ч.</strong>
+                        </div>
+                    </div>
+                    <div class="specialties">
+                        <span class="specialty-tag">Химические технологии</span>
+                        <span class="specialty-tag">Биотехнологии</span>
+                    </div>
+                </div>
+                
+                <div class="discipline-card" data-category="science">
+                    <div class="discipline-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Экология</h3>
+                    <div class="discipline-description">
+                        <p>Наука о взаимоотношениях живых организмов и их сообществ между собой и с окружающей средой.</p>
+                    </div>
+                    <div class="discipline-hours">
+                        <div class="hour-item">
+                            <span>Всего часов:</span>
+                            <strong>36 ч.</strong>
+                        </div>
+                    </div>
+                    <div class="specialties">
+                        <span class="specialty-tag">Все специальности</span>
+                    </div>
+                </div>
+                
+                <!-- Профессиональные дисциплины -->
+                <div class="discipline-card" data-category="professional">
+                    <div class="discipline-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Численные методы</h3>
+                    <div class="discipline-description">
+                        <p>Методы приближённого решения математических задач с использованием вычислительной техники.</p>
+                    </div>
+                    <div class="discipline-hours">
+                        <div class="hour-item">
+                            <span>Всего часов:</span>
+                            <strong>72 ч.</strong>
+                        </div>
+                    </div>
+                    <div class="specialties">
+                        <span class="specialty-tag">Программирование</span>
+                        <span class="specialty-tag">ИТ-специальности</span>
+                    </div>
+                </div>
+                
+                <div class="discipline-card" data-category="professional">
+                    <div class="discipline-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Теоретическая механика</h3>
+                    <div class="discipline-description">
+                        <p>Раздел механики, в котором излагаются основные законы механического движения и механического взаимодействия материальных тел.</p>
+                    </div>
+                    <div class="discipline-hours">
+                        <div class="hour-item">
+                            <span>Всего часов:</span>
+                            <strong>108 ч.</strong>
+                        </div>
+                    </div>
+                    <div class="specialties">
+                        <span class="specialty-tag">Машиностроение</span>
+                        <span class="specialty-tag">Строительство</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Таблица с детальной информацией -->
+            <div class="detailed-info">
+                <h2>Распределение часов по семестрам</h2>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Дисциплина</th>
+                                <th>1 семестр</th>
+                                <th>2 семестр</th>
+                                <th>3 семестр</th>
+                                <th>4 семестр</th>
+                                <th>Всего</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Математика</td>
+                                <td>90 ч</td>
+                                <td>90 ч</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>180 ч</td>
+                            </tr>
+                            <tr>
+                                <td>Физика</td>
+                                <td>72 ч</td>
+                                <td>54 ч</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>126 ч</td>
+                            </tr>
+                            <tr>
+                                <td>Химия</td>
+                                <td>54 ч</td>
+                                <td>36 ч</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>90 ч</td>
+                            </tr>
+                            <tr>
+                                <td>Дискретная математика</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>54 ч</td>
+                                <td>-</td>
+                                <td>54 ч</td>
+                            </tr>
+                            <tr>
+                                <td>Электротехника</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>90 ч</td>
+                                <td>-</td>
+                                <td>90 ч</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Учебно-методическое обеспечение -->
+            <div class="methodology-section">
+                <h2>Учебно-методическое обеспечение</h2>
+                <div class="methodology-cards">
+                    <div class="methodology-card">
+                        <i class="fas fa-book-open"></i>
+                        <h3>Учебные пособия</h3>
+                        <p>Более 50 авторских учебных пособий и методических указаний</p>
+                    </div>
+                    
+                    <div class="methodology-card">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Электронные ресурсы</h3>
+                        <p>Доступ к электронным учебникам, симуляторам и тестовым системам</p>
+                    </div>
+                    
+                    <div class="methodology-card">
+                        <i class="fas fa-vial"></i>
+                        <h3>Лабораторная база</h3>
+                        <p>Современное оборудование для проведения лабораторных работ</p>
+                    </div>
+                    
+                    <div class="methodology-card">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h3>Дистанционное обучение</h3>
+                        <p>Курсы на платформе Moodle для всех дисциплин</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <h3>ПЦК ЕНД</h3>
+                        <p>Предметно-цикловая комиссия<br>Естественнонаучных дисциплин</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Дисциплины</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Математика</a></li>
+                        <li><a href="#">Физика</a></li>
+                        <li><a href="#">Химия</a></li>
+                        <li><a href="#">Экология</a></li>
+                        <li><a href="#">Спецдисциплины</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Ресурсы</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Методические материалы</a></li>
+                        <li><a href="#">Электронные учебники</a></li>
+                        <li><a href="#">Тесты и задания</a></li>
+                        <li><a href="#">Расписание консультаций</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> пр-т Победы, 13, каб. 215</p>
+                    <p><i class="fas fa-phone"></i> +7 (3532) 77-88-99</p>
+                    <p><i class="fas fa-envelope"></i> pck_natural@college.ogu.ru</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ПЦК Естественнонаучных дисциплин Университетского колледжа ОГУ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Фильтрация дисциплин
+        document.querySelectorAll('.discipline-filters .filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Убираем активный класс у всех кнопок
+                document.querySelectorAll('.discipline-filters .filter-btn').forEach(b => {
+                    b.classList.remove('active');
+                });
+                
+                // Добавляем активный класс текущей кнопке
+                this.classList.add('active');
+                
+                const filter = this.dataset.filter;
+                const cards = document.querySelectorAll('.discipline-card');
+                
+                cards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 50);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

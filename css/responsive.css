@@ -1,0 +1,254 @@
+/* Адаптивные стили */
+
+/* Планшеты (768px - 1024px) */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .floating-elements {
+        height: 300px;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+/* Большие смартфоны (576px - 768px) */
+@media (max-width: 768px) {
+    .header {
+        padding: 12px 0;
+    }
+    
+    .mobile-menu-btn {
+        display: flex;
+    }
+    
+    .nav {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition);
+        z-index: 999;
+    }
+    
+    .nav.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hero {
+        padding: 140px 0 80px;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-btns {
+        justify-content: center;
+    }
+    
+    .mission-cards,
+    .disciplines-grid,
+    .programs-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+/* Смартфоны (до 576px) */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 120px 0 60px;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .mission-card,
+    .teacher-card,
+    .discipline-card,
+    .program-card {
+        padding: 25px 20px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-number {
+        font-size: 2.8rem;
+    }
+    
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .news-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+    
+    .table-responsive {
+        margin: 20px -15px;
+        border-radius: 0;
+    }
+    
+    .data-table th,
+    .data-table td {
+        padding: 12px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Очень маленькие экраны (до 400px) */
+@media (max-width: 400px) {
+    .logo-text h1 {
+        font-size: 1.1rem;
+    }
+    
+    .logo-text p {
+        font-size: 0.75rem;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .floating-elements {
+        height: 250px;
+    }
+    
+    .element {
+        width: 140px;
+        padding: 15px;
+    }
+    
+    .element i {
+        font-size: 2.2rem;
+    }
+    
+    .element span {
+        font-size: 0.9rem;
+    }
+}
+
+/* Высокие экраны (минимальная высота) */
+@media (max-height: 700px) and (orientation: landscape) {
+    .hero {
+        padding: 100px 0 60px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .floating-elements {
+        height: 250px;
+    }
+}
+
+/* Темная тема (предпочтения системы) */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #121212;
+        color: #e0e0e0;
+    }
+    
+    .header {
+        background: rgba(18, 18, 18, 0.95);
+    }
+    
+    .mission-card,
+    .teacher-card,
+    .discipline-card,
+    .program-card,
+    .news-card,
+    .data-table {
+        background: #1e1e1e;
+        color: #e0e0e0;
+    }
+    
+    .data-table tbody tr:nth-child(even) {
+        background: rgba(255, 255, 255, 0.05);
+    }
+    
+    .contact-map {
+        background: #1e1e1e;
+    }
+    
+    .map-placeholder {
+        background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    }
+    
+    .subscribe-form input {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.2);
+        color: white;
+    }
+}

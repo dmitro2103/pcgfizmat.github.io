@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПЦК Естественнонаучных дисциплин | Университетский колледж ОГУ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <h1>ПЦК ЕНД</h1>
+                        <p>Университетский колледж ОГУ</p>
+                    </div>
+                </a>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="active"><i class="fas fa-home"></i> Главная</a></li>
+                        <li><a href="staff.html"><i class="fas fa-chalkboard-teacher"></i> Состав ПЦК</a></li>
+                        <li><a href="disciplines.html"><i class="fas fa-book"></i> Дисциплины</a></li>
+                        <li><a href="additional-edu.html"><i class="fas fa-graduation-cap"></i> Доп. образование</a></li>
+                        <li><a href="week.html"><i class="fas fa-calendar-week"></i> Неделя ПЦК</a></li>
+                        <li><a href="#contact" class="contact-btn"><i class="fas fa-envelope"></i> Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Герой секция -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">Предметно-цикловая комиссия<br><span class="highlight">Естественнонаучных дисциплин</span></h2>
+                    <p class="hero-subtitle">Формируем научное мышление, развиваем аналитические способности, готовим специалистов будущего</p>
+                    <div class="hero-btns">
+                        <a href="#mission" class="btn btn-primary">Наша миссия</a>
+                        <a href="staff.html" class="btn btn-secondary">Наши преподаватели</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-elements">
+                        <div class="element math">
+                            <i class="fas fa-square-root-alt"></i>
+                            <span>Математика</span>
+                        </div>
+                        <div class="element physics">
+                            <i class="fas fa-atom"></i>
+                            <span>Физика</span>
+                        </div>
+                        <div class="element science">
+                            <i class="fas fa-flask"></i>
+                            <span>Естествознание</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-divider">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Миссия и цели -->
+    <section id="mission" class="mission-section">
+        <div class="container">
+            <h2 class="section-title"><span>Наша миссия и цели</span></h2>
+            
+            <div class="mission-cards">
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Миссия</h3>
+                    <p>Формирование у студентов научной картины мира через глубокое изучение математики, физики и естественных наук, развитие критического мышления и способности применять естественнонаучные знания в профессиональной деятельности.</p>
+                </div>
+                
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Видение</h3>
+                    <p>Стать ведущим центром естественнонаучного образования в системе СПО, признанным за инновационные методики преподавания, высокое качество подготовки и интеграцию с реальным сектором экономики.</p>
+                </div>
+                
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Стратегические цели</h3>
+                    <ul>
+                        <li>Внедрение цифровых технологий в образовательный процесс</li>
+                        <li>Развитие исследовательской деятельности студентов</li>
+                        <li>Повышение квалификации преподавателей</li>
+                        <li>Укрепление связей с работодателями</li>
+                        <li>Создание современной материально-технической базы</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преподаватели (превью) -->
+    <section class="teachers-preview">
+        <div class="container">
+            <h2 class="section-title">Наши преподаватели</h2>
+            <p class="section-subtitle">Высококвалифицированные специалисты с большим опытом работы</p>
+            
+            <div class="teachers-slider">
+                <div class="teacher-card">
+                    <div class="teacher-avatar">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h4>Т.В. Атяскина</h4>
+                    <p class="teacher-degree">Кандидат педагогических наук</p>
+                    <div class="teacher-category">
+                        <span class="badge badge-high">Высшая категория</span>
+                    </div>
+                </div>
+                
+                <div class="teacher-card">
+                    <div class="teacher-avatar">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h4>О.И. Белицкая</h4>
+                    <p class="teacher-degree">Преподаватель высшей категории</p>
+                    <div class="teacher-category">
+                        <span class="badge badge-high">Высшая категория</span>
+                    </div>
+                </div>
+                
+                <div class="teacher-card">
+                    <div class="teacher-avatar">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h4>М.В. Безрукова</h4>
+                    <p class="teacher-degree">Преподаватель высшей категории</p>
+                    <div class="teacher-category">
+                        <span class="badge badge-high">Высшая категория</span>
+                    </div>
+                </div>
+                
+                <div class="teacher-card">
+                    <div class="teacher-avatar">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h4>И.Н. Мещерякова</h4>
+                    <p class="teacher-degree">Кандидат педагогических наук</p>
+                    <div class="teacher-category">
+                        <span class="badge badge-high">Высшая категория</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="staff.html" class="btn btn-outline">Весь состав ПЦК →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Статистика -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="19">0</div>
+                    <div class="stat-label">Преподавателей</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="85">0%</div>
+                    <div class="stat-label">Высшая категория</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="12">0</div>
+                    <div class="stat-label">Дисциплин</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="25">0+</div>
+                    <div class="stat-label">Мероприятий ежегодно</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">Научных работ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Новости и события -->
+    <section class="news-section">
+        <div class="container">
+            <h2 class="section-title">Новости и события</h2>
+            
+            <div class="news-grid">
+                <article class="news-card featured">
+                    <div class="news-date">
+                        <span class="day">15</span>
+                        <span class="month">Апреля</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Неделя ПЦК ЕНД - 2024</h3>
+                        <p>С 15 по 19 апреля пройдет традиционная неделя предметно-цикловой комиссии. В программе: олимпиады, конкурсы, мастер-классы и научные семинары.</p>
+                        <a href="week.html" class="news-link">Подробнее →</a>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-date">
+                        <span class="day">10</span>
+                        <span class="month">Апреля</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Победа на олимпиаде по физике</h3>
+                        <p>Студенты групп 23РЭУС-2 и 23РЭУС-3 заняли призовые места на региональной олимпиаде.</p>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-date">
+                        <span class="day">05</span>
+                        <span class="month">Апреля</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Научно-практический семинар</h3>
+                        <p>Состоялся семинар по внедрению цифровых технологий в преподавание естественных наук.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 class="section-title">Контакты</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Адрес</h4>
+                            <p>г. Оренбург, пр-т Победы, 13<br>Учебный корпус №2, кабинет 215</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Телефон</h4>
+                            <p>+7 (3532) 77-88-99 (доб. 215)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>pck_natural@college.ogu.ru</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Часы работы</h4>
+                            <p>Пн-Пт: 9:00 - 17:00<br>Сб: 9:00 - 14:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Карта расположения</p>
+                        <small>Университетский колледж ОГУ</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <h3>ПЦК ЕНД</h3>
+                        <p>Предметно-цикловая комиссия<br>Естественнонаучных дисциплин</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Быстрые ссылки</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="staff.html">Состав ПЦК</a></li>
+                        <li><a href="disciplines.html">Дисциплины</a></li>
+                        <li><a href="additional-edu.html">Доп. образование</a></li>
+                        <li><a href="week.html">Неделя ПЦК</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Ресурсы</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Методические материалы</a></li>
+                        <li><a href="#">Расписание занятий</a></li>
+                        <li><a href="#">Нормативные документы</a></li>
+                        <li><a href="#">Научные публикации</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Подписка на новости</h4>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" class="btn btn-small">Подписаться</button>
+                    </form>
+                    <p class="subscription-note">Будьте в курсе последних событий</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ПЦК Естественнонаучных дисциплин Университетского колледжа ОГУ. Все права защищены.</p>
+                <p class="developer">Разработано с <i class="fas fa-heart"></i> студентами специальности "Информационные системы и программирование"</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

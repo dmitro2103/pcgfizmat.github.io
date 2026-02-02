@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Неделя ПЦК | ПЦК Естественнонаучных дисциплин</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <h1>ПЦК ЕНД</h1>
+                        <p>Университетский колледж ОГУ</p>
+                    </div>
+                </a>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                        <li><a href="staff.html"><i class="fas fa-chalkboard-teacher"></i> Состав ПЦК</a></li>
+                        <li><a href="disciplines.html"><i class="fas fa-book"></i> Дисциплины</a></li>
+                        <li><a href="additional-edu.html"><i class="fas fa-graduation-cap"></i> Доп. образование</a></li>
+                        <li><a href="week.html" class="active"><i class="fas fa-calendar-week"></i> Неделя ПЦК</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Заголовок страницы -->
+            <div class="page-header">
+                <h1 class="page-title">Неделя предметно-цикловой комиссии</h1>
+                <p class="page-subtitle">Традиционное ежегодное мероприятие, посвященное математике и естественным наукам</p>
+                <div class="event-date">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>15 - 19 апреля 2024 года</span>
+                </div>
+            </div>
+            
+            <!-- О мероприятии -->
+            <div class="event-info">
+                <div class="event-description">
+                    <h2>О неделе ПЦК</h2>
+                    <p>Ежегодная неделя предметно-цикловой комиссии Естественнонаучных дисциплин - это масштабное мероприятие, объединяющее студентов и преподавателей вокруг науки. В течение недели проходят олимпиады, конкурсы, научные семинары, мастер-классы и творческие мероприятия.</p>
+                    
+                    <div class="event-stats">
+                        <div class="stat">
+                            <div class="stat-number">25+</div>
+                            <div class="stat-label">Мероприятий</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">300+</div>
+                            <div class="stat-label">Участников</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">19</div>
+                            <div class="stat-label">Преподавателей</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">15</div>
+                            <div class="stat-label">Групп</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="event-highlights">
+                    <h3>Ключевые мероприятия:</h3>
+                    <ul class="highlights-list">
+                        <li><i class="fas fa-trophy"></i> Олимпиады по математике и физике</li>
+                        <li><i class="fas fa-users"></i> Научно-практическая конференция</li>
+                        <li><i class="fas fa-lightbulb"></i> Конкурс исследовательских работ</li>
+                        <li><i class="fas fa-gamepad"></i> Интеллектуальные игры и квизы</li>
+                        <li><i class="fas fa-paint-brush"></i> Творческие конкурсы</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Программа мероприятий -->
+            <div class="program-section">
+                <h2>Программа мероприятий</h2>
+                
+                <div class="program-filters">
+                    <button class="filter-btn active" data-day="all">Все дни</button>
+                    <button class="filter-btn" data-day="mon">Понедельник</button>
+                    <button class="filter-btn" data-day="tue">Вторник</button>
+                    <button class="filter-btn" data-day="wed">Среда</button>
+                    <button class="filter-btn" data-day="thu">Четверг</button>
+                    <button class="filter-btn" data-day="fri">Пятница</button>
+                </div>
+                
+                <div class="table-responsive">
+                    <table class="events-table">
+                        <thead>
+                            <tr>
+                                <th>Дата и время</th>
+                                <th>Мероприятие</th>
+                                <th>Ответственный</th>
+                                <th>Место проведения</th>
+                                <th>Участники</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Понедельник -->
+                            <tr data-day="mon">
+                                <td>
+                                    <div class="event-time">
+                                        <div class="event-date">15.04</div>
+                                        <div class="event-hour">10:00 - 11:30</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="event-name">Торжественное открытие недели ПЦК</div>
+                                    <div class="event-description">Приветственные слова, представление программы</div>
+                                </td>
+                                <td>
+                                    <div class="event-responsible">
+                                        <div class="responsible-avatar">ТА</div>
+                                        <span>Т.В. Атяскина</span>
+                                    </div>
+                                </td>
+                                <td>Актовый зал</td>
+                                <td>Все группы 1-2 курсов</td>
+                            </tr>
+                            
+                            <tr data-day="mon">
+                                <td>
+                                    <div class="event-time">
+                                        <div class="event-date">15.04</div>
+                                        <div class="event-hour">12:00 - 14:00</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="event-name">Круглый стол «Математика со всех сторон»</div>
+                                    <div class="event-description">Обсуждение современных тенденций в математике</div>
+                                </td>
+                                <td>
+                                    <div class="event-responsible">
+                                        <div class="responsible-avatar">МБ</div>
+                                        <span>М.В. Безрукова</span>
+                                    </div>
+                                </td>
+                                <td>Аудитория 215</td>
+                                <td>Студенты 2-3 курсов</td>
+                            </tr>
+                            
+                            <!-- Вторник -->
+                            <tr data-day="tue">
+                                <td>
+                                    <div class="event-time">
+                                        <div class="event-date">16.04</div>
+                                        <div class="event-hour">10:00 - 12:00</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="event-name">Конкурс презентаций «Математика вокруг нас»</div>
+                                    <div class="event-description">Студенческие презентации о применении математики</div>
+                                </td>
+                                <td>
+                                    <div class="event-responsible">
+                                        <div class="responsible-avatar">ОБ</div>
+                                        <span>О.И. Белицкая</span>
+                                    </div>
+                                </td>
+                                <td>Аудитория 310</td>
+                                <td>1-2 курсы</td>
+                            </tr>
+                            
+                            <tr data-day="tue">
+                                <td>
+                                    <div class="event-time">
+                                        <div class="event-date">16.04</div>
+                                        <div class="event-hour">14:00 - 16:00</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="event-name">Конкурс «Физика в игрушках»</div>
+                                    <div class="event-description">Демонстрация физических принципов в игрушках</div>
+                                </td>
+                                <td>
+                                    <div class="event-responsible">
+                                        <div class="responsible-avatar">АВ</div>
+                                        <span>А.А. Викторова</span>
+                                    </div>
+                                </td>
+                                <td>Лаборатория физики</td>
+                                <td>Все желающие</td>
+                            </tr>
+                            
+                            <!-- Среда -->
+                            <tr data-day="wed">
+                                <td>
+                                    <div class="event-time">
+                                        <div class="event-date">17.04</div>
+                                        <div class="event-hour">10:00 - 12:00</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="event-name">Интеллектуальная игра «Физбол»</div>
+                                    <div class="event-description">Соревнование по решению физических задач</div>
+                                </td>
+                                <td>
+                                    <div class="event-responsible">
+                                        <div class="responsible-avatar">АВ</div>
+                                        <span>А.А. Викторова</span>
+                                    </div>
+                                </td>
+                                <td>Спортивный зал</td>
+                                <td>Команды групп</td>
+                            </tr>
+                            
+                            <tr data-day="wed">
+                                <td>
+                                    <div class="event-time">
+                                        <div class="event-date">17.04</div>
+                                        <div class="event-hour">13:00 - 15:00</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="event-name">Интеллектуальная игра «Битва умов»</div>
+                                    <div class="event-description">Викторина по математике и естественным наукам</div>
+                                </td>
+                                <td>
+                                    <div class="event-responsible">
+                                        <div class="responsible-avatar">НВ</div>
+                                        <span>Н.А. Викулова</span>
+                                    </div>
+                                </td>
+                                <td>Актовый зал</td>
+                                <td>Сборные команды</td>
+                            </tr>
+                            
+                            <!-- Четверг -->
+                            <tr data-day="thu">
+                                <td>
+                                    <div class="event-time">
+                                        <div class="event-date">18.04</div>
+                                        <div class="event-hour">09:00 - 12:00</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="event-name">Олимпиада по математике</div>
+                                    <div class="event-description">Индивидуальное соревнование по математике</div>
+                                </td>
+                                <td>
+                                    <div class="event-responsible">
+                                        <div class="responsible-avatar">ИХ</div>
+                                        <span>И.С. Ходырева</span>
+                                    </div>
+                                </td>
+                                <td>Аудитории 215, 216</td>
+                                <td>Студенты 1 курса</td>
+                            </tr>
+                            
+                            <tr data-day="thu">
+                                <td>
+                                    <div class="event-time">
+                                        <div class="event-date">18.04</div>
+                                        <div class="event-hour">14:00 - 16:00</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="event-name">Научно-практическая конференция «В мире физики»</div>
+                                    <div class="event-description">Защита студенческих исследовательских проектов</div>
+                                </td>
+                                <td>
+                                    <div class="event-responsible">
+                                        <div class="responsible-avatar">НТ</div>
+                                        <span>Н.В. Тесля</span>
+                                    </div>
+                                </td>
+                                <td>Конференц-зал</td>
+                                <td>Студенты 2-3 курсов</td>
+                            </tr>
+                            
+                            <!-- Пятница -->
+                            <tr data-day="fri">
+                                <td>
+                                    <div class="event-time">
+                                        <div class="event-date">19.04</div>
+                                        <div class="event-hour">10:00 - 12:00</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="event-name">Математический турнир</div>
+                                    <div class="event-description">Командное соревнование по решению задач</div>
+                                </td>
+                                <td>
+                                    <div class="event-responsible">
+                                        <div class="responsible-avatar">ЮК</div>
+                                        <span>Ю.М. Каримова</span>
+                                    </div>
+                                </td>
+                                <td>Актовый зал</td>
+                                <td>Команды групп</td>
+                            </tr>
+                            
+                            <tr data-day="fri">
+                                <td>
+                                    <div class="event-time">
+                                        <div class="event-date">19.04</div>
+                                        <div class="event-hour">14:00 - 16:00</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="event-name">Торжественное закрытие. Награждение победителей</div>
+                                    <div class="event-description">Подведение итогов, вручение грамот и призов</div>
+                                </td>
+                                <td>
+                                    <div class="event-responsible">
+                                        <div class="responsible-avatar">ТА</div>
+                                        <span>Т.В. Атяскина</span>
+                                    </div>
+                                </td>
+                                <td>Актовый зал</td>
+                                <td>Все участники</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Галерея прошлых лет -->
+            <div class="gallery-section">
+                <h2>Галерея мероприятий прошлых лет</h2>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="gallery-caption">Олимпиада по математике 2023</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="gallery-caption">Научная конференция</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="gallery-caption">Интеллектуальная игра</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="gallery-caption">Награждение победителей</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Участие -->
+            <div class="participation-section">
+                <div class="participation-info">
+                    <h2>Как принять участие?</h2>
+                    
+                    <div class="participation-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Выберите мероприятие</h3>
+                            <p>Изучите программу и выберите мероприятия, в которых хотите участвовать</p>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Зарегистрируйтесь</h3>
+                            <p>Сообщите куратору группы или ответственному преподавателю</p>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Подготовьтесь</h3>
+                            <p>Изучите материалы и подготовьтесь к выступлению или соревнованию</p>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>Участвуйте и побеждайте!</h3>
+                            <p>Приходите на мероприятие и покажите свои знания и навыки</p>
+                        </div>
+                    </div>
+                    
+                    <div class="registration-cta">
+                        <h3>Регистрация открыта!</h3>
+                        <p>Для регистрации на мероприятия обратитесь к куратору вашей группы или в кабинет 215.</p>
+                        <a href="#contact" class="btn btn-primary">Задать вопрос</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Контакты организаторов -->
+            <div id="contact" class="organizers-section">
+                <h2>Организационный комитет</h2>
+                
+                <div class="organizers-list">
+                    <div class="organizer">
+                        <div class="organizer-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h4>Т.В. Атяскина</h4>
+                        <p>Председатель оргкомитета</p>
+                        <p class="organizer-contact">Каб. 215, тел. 77-88-99 (доб. 215)</p>
+                    </div>
+                    
+                    <div class="organizer">
+                        <div class="organizer-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h4>О.И. Белицкая</h4>
+                        <p>Координатор мероприятий</p>
+                        <p class="organizer-contact">Каб. 216</p>
+                    </div>
+                    
+                    <div class="organizer">
+                        <div class="organizer-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h4>М.В. Безрукова</h4>
+                        <p>Ответственная за олимпиады</p>
+                        <p class="organizer-contact">Каб. 217</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <h3>ПЦК ЕНД</h3>
+                        <p>Предметно-цикловая комиссия<br>Естественнонаучных дисциплин</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Неделя ПЦК 2024</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Программа мероприятий</a></li>
+                        <li><a href="#">Условия участия</a></li>
+                        <li><a href="#">Результаты прошлых лет</a></li>
+                        <li><a href="#">Фотоотчеты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Контакты оргкомитета</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> пр-т Победы, 13, каб. 215</p>
+                    <p><i class="fas fa-phone"></i> +7 (3532) 77-88-99 (доб. 215)</p>
+                    <p><i class="fas fa-envelope"></i> pck_week@college.ogu.ru</p>
+                    <p><i class="fas fa-clock"></i> Прием заявок: до 10.04.2024</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Партнеры</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Оренбургский государственный университет</a></li>
+                        <li><a href="#">Министерство образования Оренбургской области</a></li>
+                        <li><a href="#">Центр молодежных инициатив</a></li>
+                        <li><a href="#">Научное общество студентов</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ПЦК Естественнонаучных дисциплин Университетского колледжа ОГУ</p>
+                <p>Неделя ПЦК ЕНД проводится ежегодно в апреле</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Фильтрация мероприятий по дням
+        document.querySelectorAll('.program-filters .filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Убираем активный класс у всех кнопок
+                document.querySelectorAll('.program-filters .filter-btn').forEach(b => {
+                    b.classList.remove('active');
+                });
+                
+                // Добавляем активный класс текущей кнопке
+                this.classList.add('active');
+                
+                const day = this.dataset.day;
+                const rows = document.querySelectorAll('.events-table tbody tr');
+                
+                rows.forEach(row => {
+                    if (day === 'all' || row.dataset.day === day) {
+                        row.style.display = 'table-row';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

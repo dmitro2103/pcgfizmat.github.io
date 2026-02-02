@@ -1,0 +1,351 @@
+/* Таблицы */
+.table-responsive {
+    overflow-x: auto;
+    margin: 40px 0;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.data-table {
+    width: 100%;
+    min-width: 1000px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+}
+
+.data-table thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.data-table th {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white;
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-bottom: 3px solid var(--secondary);
+    position: relative;
+}
+
+.data-table th::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.data-table th:last-child::after {
+    display: none;
+}
+
+.data-table tbody tr {
+    transition: var(--transition);
+    position: relative;
+}
+
+.data-table tbody tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.data-table tbody tr:hover {
+    background: rgba(0, 188, 212, 0.05);
+    transform: scale(1.001);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.data-table td {
+    padding: 18px 15px;
+    border-bottom: 1px solid var(--light-gray);
+    vertical-align: top;
+}
+
+.data-table td:first-child {
+    font-weight: 700;
+    color: var(--primary);
+    text-align: center;
+    width: 60px;
+}
+
+/* Специальные стили для таблицы преподавателей */
+.teacher-name {
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.teacher-degree {
+    font-size: 0.9rem;
+    color: var(--gray);
+    font-style: italic;
+}
+
+.category-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.category-high {
+    background: rgba(76, 175, 80, 0.15);
+    color: #2e7d32;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.category-first {
+    background: rgba(33, 150, 243, 0.15);
+    color: #1565c0;
+    border: 1px solid rgba(33, 150, 243, 0.3);
+}
+
+.awards-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.awards-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.awards-list li::before {
+    content: '🏆';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 1rem;
+}
+
+/* Таблица мероприятий */
+.events-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.events-table th {
+    background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+    color: white;
+    padding: 20px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.events-table td {
+    padding: 20px;
+    border-bottom: 1px solid var(--light-gray);
+    vertical-align: middle;
+}
+
+.events-table tr:last-child td {
+    border-bottom: none;
+}
+
+.event-name {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.event-responsible {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.responsible-avatar {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--primary-light), var(--secondary));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+}
+
+/* Карточки дисциплин */
+.disciplines-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.discipline-card {
+    background: white;
+    border-radius: var(--radius);
+    padding: 30px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border-left: 5px solid var(--secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+.discipline-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow);
+}
+
+.discipline-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.discipline-card h3 {
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.discipline-description {
+    color: var(--gray);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.specialties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed var(--light-gray);
+}
+
+.specialty-tag {
+    background: rgba(0, 188, 212, 0.1);
+    color: var(--secondary-dark);
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(0, 188, 212, 0.2);
+}
+
+/* Программы доп. образования */
+.programs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.program-card {
+    background: white;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    position: relative;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow);
+}
+
+.program-header {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: white;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.program-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.1"><circle cx="50" cy="50" r="40" fill="none" stroke="white" stroke-width="2"/></svg>');
+    background-size: 200px;
+}
+
+.program-header h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.program-duration {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
+}
+
+.program-body {
+    padding: 30px;
+}
+
+.program-features {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+}
+
+.program-features li {
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.program-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--success);
+    font-weight: bold;
+}
+
+.program-footer {
+    padding: 0 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.program-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.price-note {
+    font-size: 0.9rem;
+    color: var(--gray);
+    margin-top: 5px;
+}
